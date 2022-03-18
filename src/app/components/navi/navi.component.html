@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">MiniAPI</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -8,19 +8,33 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#"
+          routerLink = "/products">Home</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link active" aria-current="page" href="#"
+          routerLink = "/products/add">Add Product</a>
         </li>
-        <app-cart-summary></app-cart-summary>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#" routerLink = "/products">Link</a>
+        </li> -->
+
+        <!-- <li class="nav-item">
+          <a class="nav-link active" routerLink = "/login">Disabled</a>
+        </li> -->
       </ul>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <app-cart-summary></app-cart-summary>
+          <button class="btn btn-outline-success" routerLink = "/login" type="submit">Login</button>
+        </ul>
+
+        <!-- <li class="nav-item">
+          <a class="nav-link active" routerLink = "/login">Disabled</a>
+        </li> -->
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button> -->
       </form>
     </div>
   </div>
